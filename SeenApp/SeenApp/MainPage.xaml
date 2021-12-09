@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SeenApp.MainPage"
+             Title="Camera Access"
+             Background="Gray">
+    <StackLayout>
+            <Button Text="Take a Photo"
+                    x:Name="takePhoto"
+                    BackgroundColor="LightGreen"
+                    Clicked="TakeAPhotoButton_OnClicked"/>
+            <Button Text="Pick a Photo"
+                    x:Name="pickPhoto"
+                    BackgroundColor="LawnGreen"
+                    Clicked="PickAPhotoButton_OnClicked"/>
+            <Entry  x:Name="entry"
+                    Placeholder="Name of Image"/>
+            <Image  x:Name="image"
+                    WidthRequest="100"
+                    HeightRequest="375"
+                    Aspect="AspectFit"/>
+            <Button x:Name="upload"
+                    Text="Upload to Server"
+                    BackgroundColor="LawnGreen"
+                    VerticalOptions="EndAndExpand"
+                    Clicked="UploadButton_OnClicked"/>
+        </StackLayout>
+
+</ContentPage>
